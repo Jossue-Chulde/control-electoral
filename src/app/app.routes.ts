@@ -1,4 +1,4 @@
-import type { Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
@@ -19,7 +19,13 @@ export const routes: Routes = [
         redirectTo: 'dashboard',
         pathMatch: 'full',
       },
-      // Aquí iremos agregando las rutas hijas (dashboard, recintos, etc.) más adelante
+      {
+        path: 'dashboard',
+        // ESTA ES LA LÍNEA MÁGICA: 
+        // Si la ruta dashboard no tiene componente aún, 
+        // cargamos temporalmente una página en blanco para que no falle.
+        loadComponent: () => import('./features/tabs/dashboard.page').then((m) => m.DashboardPage).catch(() => import('./features/auth/home.page').then((m) => m.HomePage)),
+      }
     ]
   }
 ];
