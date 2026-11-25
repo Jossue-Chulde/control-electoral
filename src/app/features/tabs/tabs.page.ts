@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, effect } from '@angular/core';
 import { 
   IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, IonRouterOutlet 
 } from '@ionic/angular';
@@ -12,15 +12,18 @@ import { AuthService } from '../../core/services/auth.service';
   templateUrl: 'tabs.page.html',
   styleUrls: ['tabs.page.scss'],
   standalone: true,
-  imports: [
-    IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, IonRouterOutlet, CommonModule
-  ]
+  imports: [IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, IonRouterOutlet, CommonModule]
 })
 export class TabsPage {
-  // Obtenemos el rol del usuario para mostrar sus pestañas correspondientes
-  rolActual = this.authService.usuarioActual()?.rol;
+  rolActual: string | undefined;
 
   constructor(private authService: AuthService) {
     addIcons({ people, documentText, statsChart, personCircle, map });
+
+    // effect() se ejecuta cada vez que el signal 'usuarioActual' cambie
+    effect(() => {
+      this.rolActual = this.authService.usuarioActual()?.rol;
+      console.log('Rol detectado en Tabs:', this.rolActual); // Para depurar
+    });
   }
 }

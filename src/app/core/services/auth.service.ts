@@ -6,13 +6,13 @@ import { Usuario } from '../../shared/models/usuario.model';
   providedIn: 'root'
 })
 export class AuthService {
-  // Signal para mantener el estado del usuario en toda la app
+  // Signal que guarda al usuario actual
   public usuarioActual = signal<Usuario | null>(null);
 
   constructor(private supabaseService: SupabaseService) {
     this.cargarSesion();
   }
-
+  
   // Al iniciar la app, verifica si ya hay una sesión activa
   async cargarSesion() {
     const { data: { session } } = await this.supabaseService.client.auth.getSession();

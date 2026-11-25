@@ -21,10 +21,11 @@ export const routes: Routes = [
       },
       {
         path: 'dashboard',
-        // ESTA ES LA LÍNEA MÁGICA: 
-        // Si la ruta dashboard no tiene componente aún, 
-        // cargamos temporalmente una página en blanco para que no falle.
-        loadComponent: () => import('./features/tabs/dashboard.page').then((m) => m.DashboardPage).catch(() => import('./features/auth/home.page').then((m) => m.HomePage)),
+        loadComponent: () => import('./features/tabs/dashboard.page').then((m) => m.DashboardPage),
+      },
+      {
+        path: 'recintos',
+        loadComponent: () => import('./features/recintos/pages/lista-recintos.page').then((m) => m.ListaRecintosPage),
       }
     ]
   }
