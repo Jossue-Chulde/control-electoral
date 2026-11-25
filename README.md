@@ -18,7 +18,7 @@ Sigue estos pasos para levantar el proyecto en tu entorno local:
 Clonar el repositorio:
 
 ```bash
-git clone <URL_DE_TU_REPOSITORIO>
+git clone https://github.com/Jossue-Chulde/control-electoral
 cd control-electoral
 ```
 Instalar dependencias:
@@ -47,8 +47,8 @@ Abre el archivo environment.ts (y environment.prod.ts) y asegúrate de que conte
 ```bash
 export const environment = {
   production: false,
-  supabaseUrl: 'https://[TU_PROYECTO].supabase.co',
-  supabaseKey: '[TU_ANON_KEY]' // Llave pública (eyJ... o sb_publishable_...)
+  supabaseUrl: 'https://iyyenoqbgmjjdgrgbfbf.supabase.co',
+  supabaseKey: 'sb_publishable_eisFqLf8IVM41UOk9thJOA_5Hb49fG6'
 };
 ```
 ## 3. Arquitectura del Proyecto
