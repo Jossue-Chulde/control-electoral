@@ -4,23 +4,6 @@ const config: CapacitorConfig = {
   appId: 'ec.org.controlelectoral',
   appName: 'Control Electoral',
   webDir: 'www',
-  plugins: {
-    SplashScreen: {
-      launchShowDuration: 0,
-      launchAutoHide: true,
-      launchFadeOutDuration: 3000,
-      backgroundColor: "#ffffff",
-      androidSplashResourceName: "splash",
-      androidScaleType: "CENTER_CROP",
-      showSpinner: false,
-      androidSpinnerStyle: "large",
-      iosSpinnerStyle: "small",
-      spinnerColor: "#999999",
-      splashFullScreen: false,
-      splashImmersive: false,
-      layoutName: "launch_screen",
-      useDialog: false,
-    },
-  },
 };
+
 export default config;
