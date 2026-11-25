@@ -9,17 +9,22 @@ export class SupabaseService {
   private supabase: SupabaseClient;
 
   constructor() {
-    this.supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
+    this.supabase = createClient(environment.supabaseUrl, environment.supabaseKey, {
+      auth: {
+        persistSession: true,
+        autoRefreshToken: true,
+        detectSessionInUrl: true,
+        storage: window.localStorage
+      },
+      global: {
+        headers: {
+          apikey: environment.supabaseKey
+        }
+      }
+    });
   }
 
-  // Exponemos el cliente para usarlo en otros servicios
   get client(): SupabaseClient {
     return this.supabase;
-  }
-
-  // Método rápido para ver si hay un usuario logueado
-  async getUsuarioActual() {
-    const { data: { user } } = await this.supabase.auth.getUser();
-    return user;
   }
 }
