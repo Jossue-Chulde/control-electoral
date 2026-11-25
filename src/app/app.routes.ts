@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import type { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
@@ -10,5 +10,16 @@ export const routes: Routes = [
     path: 'login',
     loadComponent: () => import('./features/auth/home.page').then((m) => m.HomePage),
   },
-  // Aquí agregaremos las rutas de Tabs más adelante
+  {
+    path: 'tabs',
+    loadComponent: () => import('./features/tabs/tabs.page').then((m) => m.TabsPage),
+    children: [
+      {
+        path: '',
+        redirectTo: 'dashboard',
+        pathMatch: 'full',
+      },
+      // Aquí iremos agregando las rutas hijas (dashboard, recintos, etc.) más adelante
+    ]
+  }
 ];

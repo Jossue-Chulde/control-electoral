@@ -1,0 +1,39 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    
+    <!-- Pestaña para Coordinador Provincial -->
+    <ion-tab-button tab="dashboard" *ngIf="rolActual === 'provincial'">
+      <ion-icon name="stats-chart"></ion-icon>
+      <ion-label>Dashboard</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="recintos" *ngIf="rolActual === 'provincial'">
+      <ion-icon name="map"></ion-icon>
+      <ion-label>Recintos</ion-label>
+    </ion-tab-button>
+
+    <!-- Pestaña para Coordinador de Recinto -->
+    <ion-tab-button tab="mesas" *ngIf="rolActual === 'coordinador'">
+      <ion-icon name="document-text"></ion-icon>
+      <ion-label>Mesas</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="veedores" *ngIf="rolActual === 'coordinador'">
+      <ion-icon name="people"></ion-icon>
+      <ion-label>Veedores</ion-label>
+    </ion-tab-button>
+
+    <!-- Pestaña para Veedor -->
+    <ion-tab-button tab="mis-mesas" *ngIf="rolActual === 'veedor'">
+      <ion-icon name="document-text"></ion-icon>
+      <ion-label>Mis Mesas</ion-label>
+    </ion-tab-button>
+
+    <!-- Pestaña para todos: Perfil -->
+    <ion-tab-button tab="perfil">
+      <ion-icon name="person-circle"></ion-icon>
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>
