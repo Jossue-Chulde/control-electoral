@@ -1,3 +1,5 @@
+export type Rol = 'provincial' | 'coordinador' | 'veedor';
+
 export interface Usuario {
   id: string;
   cedula: string;
@@ -5,7 +7,7 @@ export interface Usuario {
   apellidos: string;
   telefono: string;
   correo: string;
-  rol: 'provincial' | 'coordinador' | 'veedor';
+  rol: Rol;
   recinto_id: number | null;
   debe_cambiar_clave: boolean;
 }
