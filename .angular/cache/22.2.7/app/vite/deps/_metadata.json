@@ -1,0 +1,146 @@
+{
+  "hash": "91e58d59",
+  "configHash": "58d5ebf8",
+  "lockfileHash": "807f0eab",
+  "browserHash": "22539813",
+  "optimized": {
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "65a5d4cf",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "cb48aecb",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "1b37430a",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "f1720c4d",
+      "needsInterop": false
+    },
+    "@capacitor/camera": {
+      "src": "../../../../../../node_modules/@capacitor/camera/dist/esm/index.js",
+      "file": "@capacitor_camera.js",
+      "fileHash": "a83cff3a",
+      "needsInterop": false
+    },
+    "@capacitor/core": {
+      "src": "../../../../../../node_modules/@capacitor/core/dist/index.js",
+      "file": "@capacitor_core.js",
+      "fileHash": "f5d00a9f",
+      "needsInterop": false
+    },
+    "@capacitor/geolocation": {
+      "src": "../../../../../../node_modules/@capacitor/geolocation/dist/esm/index.js",
+      "file": "@capacitor_geolocation.js",
+      "fileHash": "8882f066",
+      "needsInterop": false
+    },
+    "@ionic/angular": {
+      "src": "../../../../../../node_modules/@ionic/angular/dist/standalone/index.js",
+      "file": "@ionic_angular.js",
+      "fileHash": "3b6550f0",
+      "needsInterop": false
+    },
+    "ionicons": {
+      "src": "../../../../../../node_modules/ionicons/dist/index.js",
+      "file": "ionicons.js",
+      "fileHash": "d884c4e2",
+      "needsInterop": false
+    },
+    "ionicons/icons": {
+      "src": "../../../../../../node_modules/ionicons/icons/index.mjs",
+      "file": "ionicons_icons.js",
+      "fileHash": "0a655192",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "common-BAPJQO-E": {
+      "file": "common-BAPJQO-E.js",
+      "isDynamicEntry": false
+    },
+    "core-BYwc6X6M": {
+      "file": "core-BYwc6X6M.js",
+      "isDynamicEntry": false
+    },
+    "createObject-vcyYvRbA": {
+      "file": "createObject-vcyYvRbA.js",
+      "isDynamicEntry": false
+    },
+    "forms-BmbBhgyZ": {
+      "file": "forms-BmbBhgyZ.js",
+      "isDynamicEntry": false
+    },
+    "p-BMPN55of-B4r78Cog": {
+      "file": "p-BMPN55of-B4r78Cog.js",
+      "isDynamicEntry": false
+    },
+    "p-BgjAK-TD-mtMZvT5Y": {
+      "file": "p-BgjAK-TD-mtMZvT5Y.js",
+      "isDynamicEntry": false
+    },
+    "p-BumInQYT-LxW2_2kq": {
+      "file": "p-BumInQYT-LxW2_2kq.js",
+      "isDynamicEntry": false
+    },
+    "p-C5zGntuD-DE4FFvdW": {
+      "file": "p-C5zGntuD-DE4FFvdW.js",
+      "isDynamicEntry": true
+    },
+    "p-C8n1kmjg-8bAu4zfl": {
+      "file": "p-C8n1kmjg-8bAu4zfl.js",
+      "isDynamicEntry": true
+    },
+    "p-CmDwAGfM-DlKlhGyk": {
+      "file": "p-CmDwAGfM-DlKlhGyk.js",
+      "isDynamicEntry": true
+    },
+    "p-CyKwPay6-CVToOkf_": {
+      "file": "p-CyKwPay6-CVToOkf_.js",
+      "isDynamicEntry": false
+    },
+    "p-D0YpjgON-CQ6tjdDc": {
+      "file": "p-D0YpjgON-CQ6tjdDc.js",
+      "isDynamicEntry": false
+    },
+    "p-DWh32GVO-8eFbA4va": {
+      "file": "p-DWh32GVO-8eFbA4va.js",
+      "isDynamicEntry": true
+    },
+    "p-ZjP4CjeZ-B7n67IAv": {
+      "file": "p-ZjP4CjeZ-B7n67IAv.js",
+      "isDynamicEntry": false
+    },
+    "p-vBBGetx6-DkFgFL0G": {
+      "file": "p-vBBGetx6-DkFgFL0G.js",
+      "isDynamicEntry": false
+    },
+    "platform-browser-Bd-xIGqA": {
+      "file": "platform-browser-Bd-xIGqA.js",
+      "isDynamicEntry": false
+    },
+    "router-CTAbZcVH": {
+      "file": "router-CTAbZcVH.js",
+      "isDynamicEntry": false
+    },
+    "standalone-CWMEsK8E": {
+      "file": "standalone-CWMEsK8E.js",
+      "isDynamicEntry": false
+    },
+    "web-BLWthED9": {
+      "file": "web-BLWthED9.js",
+      "isDynamicEntry": true
+    }
+  }
+}

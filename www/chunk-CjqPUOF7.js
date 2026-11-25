@@ -1,0 +1,1 @@
+function r(a,e){let i=e.filter(n=>n.mesa_id===a.id).length;return i>=2?`Completa`:i===1?`Acta parcial`:a.veedor_id?`Asignada`:`Sin asignar`}var t={"Sin asignar":`medium`,Asignada:`warning`,"Acta parcial":`tertiary`,Completa:`success`};export{t as n,r as t};
